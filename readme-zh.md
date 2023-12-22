@@ -26,7 +26,7 @@
 您可以使用以下命令安装所需的软件包：
 
 ````bash
-pip install -r 要求.txt
+pip install -r requirements.txt
 ````
 
 或者
