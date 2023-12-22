@@ -32,7 +32,7 @@ pip install -r 要求.txt
 或者
 
 ````bash
-pip 安装 fitparse Pillow moviepy numpy
+pip install fitparse Pillow moviepy numpy
 ````
 
 不管它有什么作用。
