@@ -1,6 +1,9 @@
 # Fit 2 Video Readme
 [English](readme.md)
 
+# 网页图形用户界面
+对于那些不知道如何配置参数的人，这里有一个 WebPage GUI，可以根据您的偏好配置您的 python 脚本。请点击这里 [fit2video.haozheli.com](https://fit2video.haozheli.com)
+
 # FIT 文件视频叠加生成器
 
 该项目是一个 Python 脚本，可从 .FIT 文件生成视频叠加，该文件通常用于存储来自骑自行车、跑步或游泳等活动的 GPS 和其他传感器数据。 该脚本解析 FIT 文件，提取相关数据，并创建一系列显示活动指标（如距离、时间、步速、功率和心率）的帧。 然后将这些帧组合成视频文件。

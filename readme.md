@@ -1,6 +1,9 @@
 # Fit 2 Video Readme
 [中文](readme-zh.md)
 
+# WebPage GUI Here
+For those who don't know how to configure the parameters, here is an WebPage GUI that will configure your python script by your preference. Check it here [fit2video.haozheli.com](https://fit2video.haozheli.com)
+
 # FIT File Video Overlay Generator
 
 This project is a Python script that generates a video overlay from a .FIT file, which is commonly used to store GPS and other sensor data from activities such as cycling, running, or swimming. The script parses the FIT file, extracts relevant data, and creates a sequence of frames displaying the activity's metrics like distance, time, pace, power, and heart rate. These frames are then combined into a video file.
