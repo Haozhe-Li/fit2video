@@ -2,3 +2,4 @@ fitparse==1.2.0
 Pillow==9.0.0
 moviepy==1.0.3
 numpy==1.22.0
+gradio==4.37.2

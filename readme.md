@@ -1,32 +1,31 @@
-# Fit 2 Video Readme
-[中文](readme-zh.md)
+# FIT 2 VIDEO
+[![Icon](https://skillicons.dev/icons?i=py,anaconda,pr)](#) [🇨🇳中文](./docs/README-zh.md)
 
-# WebPage GUI Here
-For those who don't know how to configure the parameters, here is an WebPage GUI that will configure your python script by your preference. Check it here [fit2video.haozheli.com](https://fit2video.haozheli.com)
+Parse .fit file to video overlay with one click! Best for runners, video bloggers.
 
-# FIT File Video Overlay Generator
-
-This project is a Python script that generates a video overlay from a .FIT file, which is commonly used to store GPS and other sensor data from activities such as cycling, running, or swimming. The script parses the FIT file, extracts relevant data, and creates a sequence of frames displaying the activity's metrics like distance, time, pace, power, and heart rate. These frames are then combined into a video file.
+## Online Webpage
+Webpage now launched on HuggingFace! No coding required with minimal parameters to enter, [CHECK IT OUT!](https://haozheli04-fit2video.hf.space/)
 
 ## Features
 
 - Parses .FIT files to extract activity data.
-- Generates an overlay with custom resolution, color, size, and font.
+- Creates an overlay with custom resolution, color, size, and font.
 - Outputs activity data such as distance, time, pace, power, and heart rate.
-- Creates a video file with the overlay.
+- Creates a video file containing the overlay.
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin, make sure you have the following requirements
 
 - Python 3.x installed
-- The following Python packages installed:
+- The following Python packages installed
     - `fitparse` for parsing FIT files
-    - `Pillow` (PIL fork) for image processing
-    - `moviepy` for video file creation
-    - `numpy` for handling frame data
+    -  `Pillow` (PIL fork) for image processing
+    - `moviepy` for creating video files
+    - `numpy` for handling image data
+    - `gradio` for GUI client
 
-You can install the required packages with the following command:
+You can install the required packages with the following command
 
 ```bash
 pip install -r requirements.txt
@@ -35,47 +34,47 @@ pip install -r requirements.txt
 or
 
 ```bash
-pip install fitparse Pillow moviepy numpy
+pip install fitparse pillow moviepy numpy gradio
 ```
 
-what ever it works.
+whatever works.
 
 ## Usage
 
 1. Clone this repository or download the script to your local machine.
-2. Place your .FIT file in the same directory as the script, or update the `fit_file_path` variable in the script with the correct path to your FIT file.
-3. Customize the video overlay settings in the script, such as resolution, background color, font color, and font size.
-4. Run the script: 
-
+2. Install the dependencies:
 ```bash
-python fit_video_overlay.py
+pip install -r requirements.txt
 ```
-
-5. The script will generate a video file named `output_overlay.mp4` with the overlay of your activity data.
+3. Run the `app.py' command:
+```bash
+python3 app.py
+```
+4. This will run a web page at your local URL: usually `http://127.0.0.1:7860`.
+5. Go to the URL above and upload your .fit file and download the video overlay.
 
 ## Customization
 
-To customize your video overlay, change the following variables in the script:
+Here are the parameters you can customize. Otherwise the default value will be used.
 
-- `fit_file_path`: Path to your .FIT file.
-- `width`, `height`: Resolution of the video overlay.
-- `background_color`: Background color of the overlay.
-- `font_color`: Color of the font.
-- `font_size`: Size of the font.
-- `font`: Font used for the overlay text.
+- **Width, Height:** Resolution of the video overlay.
+- **background_color:** Background color of the overlay.
+- **font_color:** Font color.
+- **font_size:** Font size.
+- **font:** Font used for the overlay text.
 
-## Contributing
+## Contribute
 
-Contributions are welcome. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Contributions are welcome. If you have a suggestion that would improve this, please fork the repo and create a pull request. You can also just open a new issue with the tag "enhancement".
 
 ## License
 
-This project is licensed under the [MIT License](notion://www.notion.so/haozheli/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
 If you have any questions or comments about the project, please open an issue on the GitHub repository.
 
-## Acknowledgments
+## Acknowledgements
 
-This project was inspired by the need to visualize workout data in an engaging way. Thanks to the developers of the `fitparse`, `Pillow`, `moviepy`, and `numpy` libraries for making this possible.
+This project was inspired by the need to visualize training data in an appealing way. Thanks to the developers of the `fitparse`, `Pillow`, `moviepy`, and `numpy` libraries for making this possible. Special thanks to `gradio` for providing an elegant GUI.
