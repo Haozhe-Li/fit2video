@@ -4,7 +4,7 @@
 Parse .fit file to video overlay with one click! Best for runners, video bloggers.
 
 ## Online Webpage
-Webpage now launched on HuggingFace! No coding required with minimal parameters to enter, [CHECK IT OUT!](https://haozheli04-fit2video.hf.space/)
+Webpage now launched on HuggingFace! No coding required with minimal parameters to enter, [CHECK IT OUT!](fit2video.com)
 
 ## Features
 

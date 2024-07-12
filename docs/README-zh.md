@@ -4,7 +4,7 @@
 一键解析 .fit 文件为视频叠加层！最适合跑步者、视频博主。
 
 ## 在线网页
-网页现已在 HuggingFace 上线！无需编程，输入参数最少，[快来看看！](https://haozheli04-fit2video.hf.space/)
+网页现已在 HuggingFace 上线！无需编程，输入参数最少，[快来看看！](fit2video.com)
 
 ## 功能
 
