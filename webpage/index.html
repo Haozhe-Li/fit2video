@@ -1,0 +1,98 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fit 2 Video</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="fit 2 video" />
+    <!-- //Meta tag Keywords -->
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- //google fonts -->
+
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    <!--//Style-CSS -->
+
+    <!--/fontAwesome-CSS -->
+    <link rel="stylesheet" href="assets/css/fontAwesome.css" type="text/css" media="all" />
+    <!--/fontAwesome-CSS -->
+</head>
+
+<body>
+    <div class="w3l-error-block">
+
+        <div class="page">
+            <div class="content">
+                <div class="logo">
+                    <a class="brand-logo" href="index.html">Fit 2 Video</a>
+                    <!-- if logo is image enable this   
+                <a class="brand-logo" href="#index.html">
+                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> 
+            -->
+                </div>
+                <div class="w3l-error-grid">
+                    <h2>Parse your</h2>
+                    <h1>FIT</h1>
+                    <h2>to Video Overlay</h2>
+                    <p>Parse .fit file to video overlay with one click!</p>
+                    <a href="https://haozheli04-fit2video.hf.space/" class="home">Try Online Now</a>
+                    <a href="https://github.com/Haozhe-Li/fit2video/" class="home">View Code & Documentation</a>
+                </div>
+
+                <div class="copy-right text-center">
+                    <p>© <span id="currentYear"> <a href="https://haozhe.li" target="_blank">Haozhe Li</a>. All rights
+                            reserved | Design by
+                            <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+                </div>
+            </div>
+            <img src="assets/images/bg.webp" class="img-responsive" alt="error image" />
+        </div>
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script>
+            var lFollowX = 0,
+                lFollowY = 0,
+                x = 0,
+                y = 0,
+                friction = 1 / 30;
+
+            function animate() {
+                x += (lFollowX - x) * friction;
+                y += (lFollowY - y) * friction;
+
+                translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+                $('img').css({
+                    '-webit-transform': translate,
+                    '-moz-transform': translate,
+                    'transform': translate
+                });
+
+                window.requestAnimationFrame(animate);
+            }
+
+            $(window).on('mousemove click', function (e) {
+
+                var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+                var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+                lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+                lFollowY = (10 * lMouseY) / 100;
+
+            });
+
+            animate();
+        </script>
+    </div>
+</body>
+
+</html>
